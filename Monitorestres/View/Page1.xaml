@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Monitorestres.View.Page1">
+
+    <StackLayout>
+        <Frame BackgroundColor="#197" Padding="24" CornerRadius="0">
+            <Label Text="Monitor de estres" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Label Text="Ingreso de frecuencia cardiaca"/>
+        <Entry Placeholder="Latidos por minuto (bpm)" Keyboard="Numeric"/>
+        
+        <Label Text="Ingreso de horas de sueño"/>
+        <Entry Placeholder="Horas de sueño" Keyboard="Numeric"/>
+
+        <Label Text="Resultado"/>
+        <Entry Placeholder="Reasultado del calculo" Keyboard="Numeric" IsEnabled="False"/>
+        <Button Text="Nivel de estres" Command="{Binding Calcularestres}" CornerRadius="15" BackgroundColor="#72bb53"/>
+
+        <Image Source="bajo" IsVisible="False"/>
+        <Image Source="medio" IsVisible="False"/>
+        <Image Source="alto" IsVisible="False"/>
+    </StackLayout>
+    
+
+</ContentPage>
+    <!--pcalcialo-->
